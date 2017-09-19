@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_theme"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_click"
+            android:padding="13dp"
+            android:src="@drawable/title_bar_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="支付页面"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <com.sk.meikelai.view.MyListView
+                android:id="@+id/rc_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:dividerHeight="0dp" />
+
+            <View style="@style/normal_line" />
+
+            <LinearLayout
+                android:id="@+id/once_cash_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout style="@style/normal_RelativeLayout_Style">
+
+                    <TextView
+                        style="@style/normal_RelativeLayout_TextView_Style"
+                        android:text="次卡消费" />
+
+                    <TextView
+                        android:id="@+id/once_cash_num"
+                        style="@style/normal_RelativeLayout_Right_TextView_Style"
+                        android:text="0次" />
+
+                </RelativeLayout>
+
+                <View style="@style/normal_line" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/year_cash_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout style="@style/normal_RelativeLayout_Style">
+
+                    <TextView
+                        style="@style/normal_RelativeLayout_TextView_Style"
+                        android:text="年卡消费" />
+
+                    <TextView
+                        android:id="@+id/year_cash_num"
+                        style="@style/normal_RelativeLayout_Right_TextView_Style"
+                        android:text="0次" />
+
+                </RelativeLayout>
+
+                <View style="@style/normal_line" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/save_cash_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/saving_card"
+                    style="@style/normal_RelativeLayout_Style">
+
+                    <TextView
+                        style="@style/normal_RelativeLayout_TextView_Style"
+                        android:text="储值卡" />
+
+                    <TextView
+                        android:id="@+id/czk_money"
+                        style="@style/normal_RelativeLayout_Right_TextView_Style"
+                        android:drawablePadding="5dp"
+                        android:drawableRight="@drawable/arrow_to_right"
+                        android:text="0.0" />
+
+                </RelativeLayout>
+
+                <View style="@style/normal_line" />
+            </LinearLayout>
+
+            <RelativeLayout style="@style/normal_RelativeLayout_Style">
+
+                <TextView
+                    style="@style/normal_RelativeLayout_TextView_Style"
+                    android:text="待付款" />
+
+                <TextView
+                    android:id="@+id/wait_pay"
+                    style="@style/normal_RelativeLayout_Right_TextView_Style"
+                    android:text="280.97" />
+
+            </RelativeLayout>
+
+            <View style="@style/normal_line" />
+
+            <LinearLayout
+                android:id="@+id/pay_way_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ripple_bg_gray"
+                    android:paddingLeft="12dp">
+
+                    <TextView
+                        style="@style/normal_RelativeLayout_TextView_Style"
+                        android:text="抹零" />
+
+                    <com.kyleduo.switchbutton.SwitchButton
+                        android:id="@+id/switchButton"
+                        style="@style/SwitchButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:checked="false"
+                        app:kswAnimationDuration="300"
+                        app:kswBackDrawable="@drawable/ios_back_drawable"
+                        app:kswBackMeasureRatio="1.4"
+                        app:kswThumbDrawable="@drawable/ios_thumb_selector"
+                        app:kswThumbMarginBottom="-8dp"
+                        app:kswThumbMarginLeft="-5dp"
+                        app:kswThumbMarginRight="-5dp"
+                        app:kswThumbMarginTop="-2.5dp" />
+
+                </RelativeLayout>
+
+                <View style="@style/normal_line" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="@string/card_mode"
+                        android:textColor="@color/text_normal"
+                        android:textSize="14sp" />
+
+                    <RadioGroup
+                        android:id="@+id/radio_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/tv_card"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/pt6"
+                            android:layout_toLeftOf="@+id/tv_cash"
+                            android:background="@drawable/bg_btn_way"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="5dp"
+                            android:text="@string/card_card"
+                            android:textColor="@drawable/bg_btn_way_text"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/tv_cash"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/pt6"
+                            android:layout_toLeftOf="@+id/tv_epay"
+                            android:background="@drawable/bg_btn_way"
+                            android:button="@null"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="5dp"
+                            android:text="@string/card_cash"
+                            android:textColor="@drawable/bg_btn_way_text"
+                            android:textSize="14sp" />
+
+                        <RadioButton
+                            android:id="@+id/tv_epay"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_toLeftOf="@+id/card_more"
+                            android:background="@drawable/bg_btn_way"
+                            android:button="@null"
+                            android:checked="true"
+                            android:gravity="center"
+                            android:paddingBottom="5dp"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:paddingTop="5dp"
+                            android:text="@string/card_epay"
+                            android:textColor="@drawable/bg_btn_way_text"
+                            android:textSize="14sp" />
+                    </RadioGroup>
+                </RelativeLayout>
+
+                <View style="@style/normal_line" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_margin="10dp"
+                    android:text="备注"
+                    android:textColor="@color/text_normal"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/ed_remarks"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:hint="点击填写备注"
+                    android:textColorHint="@color/light_gray"
+                    android:textCursorDrawable="@drawable/cursor_bg"
+                    android:textSize="13sp" />
+
+
+            </LinearLayout>
+
+            <View style="@style/normal_line" />
+
+            <Button
+                android:id="@+id/go_pay"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="60dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/btn_bg"
+                android:text="结账"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

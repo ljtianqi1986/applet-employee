@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
+
+    <!--最下面的图层,实际内容层-->
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"/>
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cfcfcf"/>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/pt6"
+        android:paddingTop="@dimen/pt3"
+        android:layout_alignParentBottom="true"
+        android:background="#ffffff"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_cash"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="true"
+            android:drawablePadding="@dimen/pt0"
+            android:drawableTop="@drawable/home_cash"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/pt0"
+            android:text="@string/home_cash"
+            android:textColor="@drawable/home_text_bg"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rb_card"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="@dimen/pt0"
+            android:drawableTop="@drawable/home_card"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/pt0"
+            android:text="@string/home_card"
+            android:textColor="@drawable/home_text_bg"
+            android:textSize="12sp" />
+
+
+        <RadioButton
+            android:id="@+id/rb_recharge"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="@dimen/pt0"
+            android:drawableTop="@drawable/home_recharge"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/pt0"
+            android:text="@string/home_recharge"
+            android:textColor="@drawable/home_text_bg"
+            android:textSize="12sp" />
+
+        <RadioButton
+            android:id="@+id/rb_mine"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawablePadding="@dimen/pt0"
+            android:drawableTop="@drawable/home_mine"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/pt0"
+            android:text="@string/home_mine"
+            android:textColor="@drawable/home_text_bg"
+            android:textSize="12sp" />
+
+    </RadioGroup>
+
+
+
+</LinearLayout>

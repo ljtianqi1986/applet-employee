@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:animateLayoutChanges="true"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="12dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="12dp">
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_centerVertical="true"
+        android:scaleType="fitStart"
+        android:layout_marginRight="10dp"
+        android:src="@mipmap/goods"/>
+
+    <RelativeLayout
+        android:id="@+id/item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/item_img"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+
+        <TextView
+            android:id="@+id/item_goods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="面部黑脸娃娃198元/次"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/item_msg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_goods"
+            android:layout_marginTop="5dp"
+            android:text="剩余：9次"
+            android:textSize="12sp"
+            />
+
+        <TextView
+            android:id="@+id/item_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_goods"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:text="编号:Z403-1"/>
+
+        <TextView
+            android:id="@+id/item_pinyin"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_goods"
+            android:layout_toRightOf="@id/item_number"
+            android:layout_marginTop="5dp"
+            android:textSize="12sp"
+            android:visibility="gone"
+            android:text="拼音码:MBHLWW"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:gravity="center_vertical"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/item_reduce"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/bg_click"
+                android:gravity="center"
+                android:src="@mipmap/cash_reduce"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/item_num"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:text="0"
+                android:visibility="visible"
+                android:textColor="@color/dark_blue"/>
+
+            <ImageView
+                android:id="@+id/item_add"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/bg_click"
+                android:src="@mipmap/cash_add"/>
+        </LinearLayout>
+    </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+    style="@style/normal_line"
+    android:layout_alignParentBottom="true"/>
+</LinearLayout>

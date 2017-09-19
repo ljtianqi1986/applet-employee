@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:fitsSystemWindows="true"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/theme">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="13dp"
+            android:src="@drawable/title_bar_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="收银"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/cash_fail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/cash_fail_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="收银失败"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/text_normal"/>
+
+            <TextView
+                android:id="@+id/go_cash_f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="重新收银"
+                android:gravity="center"
+                android:textColor="@color/theme"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/red_btn_bg"/>
+
+            <TextView
+                android:id="@+id/quit_account_f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="退出账户"
+                android:gravity="center"
+                android:textColor="@color/theme"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/red_btn_bg"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/cash_success"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:gravity="center">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/cash_success_icon"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="收银成功"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/text_normal"/>
+            <TextView
+                android:id="@+id/go_cash"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="继续收银"
+                android:gravity="center"
+                android:textColor="@color/theme"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/red_btn_bg"/>
+            <TextView
+                android:id="@+id/quit_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="退出账户"
+                android:gravity="center"
+                android:textColor="@color/theme"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/red_btn_bg"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:background="@drawable/topbg"
+        android:orientation="horizontal"
+        >
+
+
+        <ImageView
+            android:id="@+id/cash_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:src="@mipmap/default_head"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/dp_4">
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="尼古拉斯赵四"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+
+                <TextView
+                    android:id="@+id/user_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/user_name"
+                    android:text="(18088888888)"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pt40"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="付款"/>
+
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pt40"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/pt12"
+        android:paddingRight="@dimen/pt12"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/card_before_price"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="500"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <View style="@style/normal_line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pt40"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/pt12"
+        android:paddingRight="@dimen/pt12"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="@string/card_after_price"
+
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="400"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <View style="@style/normal_line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pt40"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/pt12"
+        android:paddingRight="@dimen/pt12"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/card_mode"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:id="@+id/tv_card"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pt36"
+            android:paddingLeft="@dimen/pt12"
+            android:paddingRight="@dimen/pt12"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/pt6"
+            android:layout_toLeftOf="@+id/tv_cash"
+            android:background="@drawable/bg_btn_add"
+            android:text="500"/>
+
+        <TextView
+            android:id="@+id/tv_cash"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pt36"
+            android:paddingLeft="@dimen/pt12"
+            android:paddingRight="@dimen/pt12"
+            android:gravity="center"
+            android:layout_marginRight="@dimen/pt6"
+            android:layout_toLeftOf="@+id/tv_epay"
+            android:background="@drawable/bg_btn_add"
+            android:text="500"/>
+
+        <TextView
+            android:id="@+id/tv_epay"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/pt36"
+            android:paddingLeft="@dimen/pt12"
+            android:paddingRight="@dimen/pt12"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_btn_add"
+            android:text="500"/>
+    </RelativeLayout>
+
+    <View style="@style/normal_line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pt40"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/pt12"
+        android:paddingRight="@dimen/pt12"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/card_staff"
+            android:textColor="@color/black"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/arrow_to_right"
+            android:text="张三"
+            android:textColor="@color/black"/>
+    </RelativeLayout>
+
+    <View style="@style/normal_line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pt40"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/pt12"
+        android:paddingRight="@dimen/pt12"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/card_memo"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pt12"
+            android:background="@null"
+            android:hint="@string/card_hint_memo"
+            />
+
+
+    </LinearLayout>
+
+    <View style="@style/normal_line"/>
+</LinearLayout>

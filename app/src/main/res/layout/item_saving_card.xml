@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:animateLayoutChanges="true"
+              android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="wrap_content"
+        android:layout_height="90dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/cd_org"/>
+
+    <RelativeLayout
+        android:id="@+id/item"
+        android:paddingLeft="12dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:layout_toRightOf="@+id/item_img"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="90dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/item_goods"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="光疗甲一年"
+                android:textColor="@color/saving_yellow"
+                android:textSize="20sp"/>
+
+
+
+
+            <TextView
+                android:id="@+id/item_off"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_price"
+                android:layout_toRightOf="@+id/item_term"
+                android:text="8折"
+                android:visibility="visible"/>
+
+            <TextView
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:id="@+id/item_price_sum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/item_goods"
+                android:text="到账金额：4000"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/item_price"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/item_goods"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/item_price_sum"
+                android:textSize="14sp"
+                android:text="售价400"/>
+
+
+
+        <TextView
+            android:id="@+id/item_term"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_price"
+            android:text="有效期限1年"
+            android:layout_marginRight="10dp"
+            android:textSize="14sp"
+            android:textColor="@color/dark_yellow"/>
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/item_buy"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:layout_marginRight="12dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/buy_1"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

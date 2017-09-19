@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:animateLayoutChanges="true"
+              android:background="@color/white"
+              android:orientation="vertical"
+              >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp"
+        android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/item_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="fitStart"
+        android:src="@mipmap/goods"/>
+
+    <RelativeLayout
+        android:id="@+id/item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/item_img"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:background="@color/white"
+        >
+
+
+        <TextView
+            android:id="@+id/item_goods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="面部黑脸娃娃198元/次"
+            android:textColor="@color/black"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/item_worker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_goods"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/more"
+            android:gravity="center_vertical"
+            android:text="服务技师  小能手"
+            />
+
+
+        <EditText
+            android:id="@+id/item_price"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            android:background="@null"
+            android:visibility="gone"
+            android:text="300.0"/>
+
+        <TextView
+            android:id="@+id/item_num"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:gravity="right|center_vertical"
+            android:textSize="18sp"
+            android:textColor="@color/text_normal"
+            android:text="1次"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_worker">
+
+            <CheckBox
+                android:id="@+id/cb_sale"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_un_sale"
+                android:layout_width="wrap_content"
+                android:layout_toRightOf="@id/cb_sale"
+                android:layout_centerVertical="true"
+                android:text="@string/cash_un_sale"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="单价：198.0"/>
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    </LinearLayout>
+    <View
+        style="@style/normal_line"/>
+</LinearLayout>

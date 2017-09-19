@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rc_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#ffff0000"
+                android:dividerHeight="10dp"/>
+
+            <View style="@style/normal_line"/>
+
+
+            <RelativeLayout
+                style="@style/normal_RelativeLayout_Style">
+
+                <TextView
+                    style="@style/normal_RelativeLayout_TextView_Style"
+                    android:text="次卡消费"/>
+
+                <TextView
+                    style="@style/normal_RelativeLayout_Right_TextView_Style"
+                    android:text="1次"/>
+
+            </RelativeLayout>
+
+            <View style="@style/normal_line"/>
+
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

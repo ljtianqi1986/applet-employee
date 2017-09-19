@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/bg_gray"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_function"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingLeft="12dp"
+        android:paddingRight="12dp">
+
+        <TextView
+            android:id="@+id/card_all"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:drawablePadding="5dp"
+            android:minWidth="70dp"
+            android:drawableRight="@drawable/down_grey"
+            android:gravity="center"
+            android:text="@string/card_all"/>
+
+
+        <TextView
+            android:id="@+id/search_ll"
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_toLeftOf="@+id/card_search"
+            android:background="@null"
+            android:drawablePadding="5dp"
+            android:drawableRight="@mipmap/search_gray"
+            android:gravity="center_vertical|right"
+            android:hint="@string/card_search"
+            android:maxLines="1"
+            android:textSize="14sp"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_search"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:paddingLeft="12dp"
+        android:visibility="gone">
+
+        <com.sk.meikelai.view.EditTextWithDel
+            android:id="@+id/et_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:inputType="text"
+            android:maxLines="1"
+            android:imeOptions="actionSearch"
+            android:background="@null"/>
+
+
+        <ImageView
+            android:id="@+id/search_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_vertical"
+            android:padding="10dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/search_red"/>
+
+    </LinearLayout>
+
+    <View style="@style/normal_line"/>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rc_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#ffff0000"
+            android:dividerHeight="10dp"/>
+
+        <FrameLayout
+            android:id="@+id/container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black_p50"
+            android:visibility="gone">
+
+        </FrameLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>

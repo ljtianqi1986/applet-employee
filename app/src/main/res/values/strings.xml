@@ -1,0 +1,156 @@
+<resources xmlns:xliff="http://schemas.android.com/tools">
+    <string name="app_name">美加</string>
+
+
+    <!--首页底部-->
+    <string name="home_cash">收银</string>
+    <string name="home_card">开卡</string>
+    <string name="home_recharge">充值</string>
+    <string name="home_mine">我的</string>
+
+
+    <!--通用-->
+    <string name="back">返回</string>
+    <string name="cancel">取消</string>
+    <string name="sure">确定</string>
+    <string name="fumi">福米</string>
+    <string name="dazhong">大众点评</string>
+
+    <string name="take_photo">拍照</string>
+    <string name="choose_photo">从相册选择</string>
+    <!--收银-->
+    <string name="cash_tip">现有会员开卡</string>
+    <string name="cash_scan">扫描会员码</string>
+    <string name="cash_add">添加项目</string>
+    <string name="cash_saving_card">储值卡</string>
+    <string name="cash_once_card">次卡</string>
+    <string name="cash_year_card">年卡</string>
+    <string name="cash_money">全部价格</string>
+    <string name="cash_all">所有类别</string>
+    <string name="cash_search">输入拼音码或编号</string>
+    <string name="cash_once">次卡项目</string>
+    <string name="cash_service">服务项目</string>
+    <string name="cash_goods">产品</string>
+    <string name="cash_next">下一步 </string>
+    <string name="cash_un_sale">不折扣</string>
+    <string name="cash_join">参与折扣</string>
+    <string name="cash_not_join">不参与折扣</string>
+
+    <!--开卡-->
+    <string name="card_all">所有类别</string>
+    <string name="card_search">输入拼音码或名称</string>
+    <string name="card_more">项目详情</string>
+    <string name="card_open_card">确认开卡</string>
+    <string name="card_hint_verification">请输入验证码</string>
+    <string name="card_hint_no_name">请输入姓名</string>
+    <string name="card_hint_phone">请输入手机号</string>
+    <string name="card_hint_name">在此输入姓名</string>
+    <string name="phone_number_null">请输入正确号码</string>
+    <string name="verification_code_sended">验证码已发出</string>
+
+    <!--确认开卡-->
+    <string name="card_code">输入验证码</string>
+    <string name="card_phone">绑定手机号</string>
+    <string name="card_name">会员姓名</string>
+    <string name="card_way">到店途径</string>
+    <string name="card_bind">绑定手机号</string>
+    <string name="card_ewm">生成会员二维码</string>
+    <string name="card_before_price">应付金额</string>
+    <string name="card_after_price">实收金额</string>
+    <string name="card_mode">付款方式</string>
+    <string name="card_staff">销售员</string>
+    <string name="card_memo">备注信息</string>
+    <string name="card_hint_memo">输入备注信息</string>
+    <string name="card_card">银行卡</string>
+    <string name="card_cash">现金</string>
+    <string name="card_friend">朋友介绍</string>
+    <string name="card_epay">电子支付</string>
+    <string name="card_type">开卡种类</string>
+    <string name="card_pay">付款</string>
+    <string name="card_ok">确认开卡</string>
+    <string name="card_worker">销售员</string>
+
+    <!--充值-->
+    <string name="recharge_scan">点击扫会员码充值</string>
+    <string name="recharge_card">储值卡列表</string>
+    <string name="recharge_recharge">充值金额</string>
+    <string name="recharge_pay">实付金额</string>
+    <string name="recharge_recharge_hint">输入充值金额</string>
+    <string name="recharge_pay_hint">输入实付金额</string>
+    <string name="recharge_worker">销售员</string>
+    <string name="recharge_up">升级到</string>
+    <string name="recharge_ok">确认充值</string>
+    <string name="recharge_recharge_type">充值卡类型</string>
+    <string name="recharge_recharge_money">充值金额</string>
+    <string name="recharge_recharge_after">充值后金额</string>
+    <string name="recharge_recharge_success">充值成功</string>
+    <string name="recharge_recharge_fail">充值失败</string>
+    <string name="recharge_recharge_continue">继续充值</string>
+    <string name="recharge_recharge_exit">退出账户</string>
+
+    <!--我的-->
+    <string name="mine_today">今日</string>
+    <string name="mine_month">本月</string>
+    <string name="mine_last_month">上月</string>
+    <string name="mine_tomorrow">以后</string>
+    <string name="mine_today_fumi">今日福米</string>
+    <string name="mine_month_fumi">本月福米</string>
+    <string name="mine_today_cash">收银实收</string>
+    <string name="mine_today_achievement">收银业绩</string>
+    <string name="mine_today_appointment">我的预约</string>
+    <string name="mine_today_member">我的会员</string>
+    <string name="mine_month_cash">收银实收</string>
+    <string name="mine_month_achievement">本月业绩</string>
+    <string name="mine_tomorrow_appointment">我的预约</string>
+    <string name="mine_today_order">我的今日订单审核</string>
+    <string name="mine_today_handover">今日收银现金交接申报</string>
+    <string name="mine_yes">是</string>
+    <string name="mine_order">订单流水</string>
+    <string name="mine_score">我的满意度</string>
+    <string name="mine_duty">今天我值日</string>
+    <string name="mine_update">关于美加</string>
+    <string name="mine_no">否</string>
+    <string name="mine_sure">确认交接</string>
+    <string name="mine_tip">本月您获得了</string>
+    <string name="mine_congratulations">真棒！请继续保持</string>
+    <string name="mine_name">姓名</string>
+    <string name="mine_appointment">预约</string>
+    <string name="mine_memo">备注</string>
+
+    <!--登录-->
+    <string name="username">用户名</string>
+    <string name="password">密&#12288;码</string>
+    <string name="remember">记住密码</string>
+    <string name="automatic">自动登录</string>
+    <string name="forget_password">忘记密码</string>
+    <string name="login">登&#12288;录</string>
+    <string name="input_username_hint">请输入用户名</string>
+    <string name="input_password_hint">请输入密码</string>
+
+    <!--倒计时-->
+    <string name="timer_refresh"><xliff:g id="time">%s</xliff:g>s</string>
+    <string name="send_out">发送验证码</string>
+
+
+
+    <drawable name="clr_normal">@color/theme</drawable>
+    <drawable name="clr_pressed">@color/select_red</drawable>
+
+    <array name="my_vip">
+        <item>今日新增</item>
+        <item>累计会员</item>
+    </array>
+
+    <array name="open_card">
+        <item>储值卡</item>
+        <item>年卡</item>
+        <item>次卡</item>
+    </array>
+
+    <array name="net_receipts">
+        <item>今日</item>
+        <item>本月</item>
+        <item>上月</item>
+    </array>
+
+</resources>

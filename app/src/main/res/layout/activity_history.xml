@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout style="@style/normal_RelativeLayout_Style">
+
+        <TextView
+            style="@style/normal_RelativeLayout_TextView_Style"
+            android:text="上日备用金" />
+
+        <TextView
+            style="@style/normal_RelativeLayout_TextView_Style"
+            android:layout_alignParentRight="true"
+            android:text="500元" />
+    </RelativeLayout>
+
+    <View style="@style/normal_line" />
+
+    <RelativeLayout style="@style/normal_RelativeLayout_Style">
+
+        <TextView
+            style="@style/normal_RelativeLayout_TextView_Style"
+            android:text="今日应收现金" />
+
+        <TextView
+            style="@style/normal_RelativeLayout_TextView_Style"
+            android:layout_alignParentRight="true"
+            android:text="500元" />
+    </RelativeLayout>
+
+    <View style="@style/normal_line" />
+
+    <RelativeLayout style="@style/normal_RelativeLayout_Style">
+
+        <TextView
+            style="@style/normal_RelativeLayout_TextView_Style"
+            android:text="今日预留备用金" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="right"
+            android:text="500元"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View style="@style/normal_line" />
+
+    <RelativeLayout style="@style/normal_RelativeLayout_Style">
+
+        <TextView
+            style="@style/normal_RelativeLayout_TextView_Style"
+            android:text="应交接现金" />
+
+        <TextView
+            style="@style/normal_RelativeLayout_TextView_Style"
+            android:layout_alignParentRight="true"
+            android:text="500元" />
+    </RelativeLayout>
+
+    <View style="@style/normal_line" />
+
+    <RelativeLayout style="@style/normal_RelativeLayout_Style">
+
+        <TextView
+            style="@style/normal_RelativeLayout_TextView_Style"
+            android:text="实际交接现金" />
+
+        <EditText
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@null"
+            android:gravity="right"
+            android:text="500元"
+            android:textSize="14sp" />
+        <!--<TextView-->
+        <!--style="@style/normal_RelativeLayout_TextView_Style"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:text="3000元"/>-->
+    </RelativeLayout>
+
+    <View style="@style/normal_line" />
+
+    <RelativeLayout style="@style/normal_RelativeLayout_Style">
+
+        <TextView
+            style="@style/normal_RelativeLayout_TextView_Style"
+            android:text="上传附件" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/icon_right"
+            android:src="@drawable/down" />
+
+        <ImageView
+            android:id="@+id/icon_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="right"
+            android:src="@drawable/arrow_to_right" />
+    </RelativeLayout>
+
+    <View style="@style/normal_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:padding="12dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:background="@null"
+            android:drawableLeft="@drawable/pen"
+            android:drawablePadding="5dp"
+            android:hint="输入备注信息"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <View style="@style/normal_line" />
+
+    <Button
+        android:id="@+id/history_sure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg_btn_add"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:text="@string/mine_sure"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+</LinearLayout>

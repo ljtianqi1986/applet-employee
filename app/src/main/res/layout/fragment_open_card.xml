@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_theme"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:background="@drawable/topbg"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:id="@+id/ll_scan"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="@dimen/pt40"
+                android:layout_height="@dimen/pt40"
+                android:layout_gravity="center"
+                android:src="@mipmap/scan_vertify" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/cash_scan"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center_vertical"
+            android:background="@color/white" />
+
+
+        <LinearLayout
+            android:id="@+id/phone_vertify"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/pt40"
+                android:layout_height="@dimen/pt40"
+                android:layout_gravity="center"
+                android:src="@mipmap/phone_vertify" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="手机认证"
+                android:textColor="@color/white" />
+
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pt12"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0.3dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@color/light_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pt12"
+                    android:layout_marginRight="@dimen/pt12"
+                    android:text="新增会员" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0.3dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@color/light_gray" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/card_name" />
+
+                <EditText
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:gravity="center_vertical|right"
+                    android:hint="@string/card_hint_name"
+                    android:text=""
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View style="@style/normal_line" />
+
+            <RelativeLayout
+                android:id="@+id/way_more"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/card_way" />
+
+
+                <TextView
+                    android:id="@+id/tv_way_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/icon_more"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="5dp"
+                    android:text="点击选择到店途径"
+                    android:textColor="@drawable/bg_btn_way_text"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/icon_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/down"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <View style="@style/normal_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/card_bind" />
+
+                <EditText
+                    android:id="@+id/phone"
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/card_hint_phone"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    android:textSize="16sp" />
+            </RelativeLayout>
+
+            <View style="@style/normal_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+
+                <TextView
+                    android:id="@+id/tv_verification_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/card_code" />
+
+                <com.sk.meikelai.view.VerificationCodeButton
+                    android:id="@+id/btn_verification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/shape_btn_add"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:text="@string/send_out"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/et_verification_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_toLeftOf="@+id/btn_verification"
+                    android:background="@null"
+                    android:gravity="right|center_vertical"
+                    android:hint="@string/card_hint_verification"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:text=""
+                    android:textColor="@color/text_normal"
+                    android:textColorHint="@color/home_unchecked_color"
+                    android:textSize="16sp" />
+
+
+            </RelativeLayout>
+
+            <View style="@style/normal_line" />
+
+            <Button
+                android:id="@+id/new_ewm"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/pt40"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/pt12"
+                android:background="@drawable/bg_btn_add"
+                android:paddingLeft="@dimen/pt12"
+                android:paddingRight="@dimen/pt12"
+                android:text="@string/card_ewm"
+                android:textColor="@drawable/bg_add_text_selector" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

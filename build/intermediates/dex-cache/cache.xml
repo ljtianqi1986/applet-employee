@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/liujiajia/AndroidSpace/MeiKeLai/app/libs/core4.7.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3e070d20fe4c3c5d06d5eb3465fb5fb621edc816">
+        <dex dex="/Users/liujiajia/AndroidSpace/MeiKeLai/app/build/intermediates/transforms/dex/debug/folders/1000/2/core4.7.5_469a6025811d8f6b573bb94b511f15b92e729142/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/liujiajia/AndroidSpace/MeiKeLai/app/libs/bcprov-jdk16-1.45.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="0612d4afcd33f05a5ffdd9cf835e3bd4e3b44018">
+        <dex dex="/Users/liujiajia/AndroidSpace/MeiKeLai/app/build/intermediates/transforms/dex/debug/folders/1000/2/bcprov-jdk16-1.45_bc03056b77d843ead6ed0c4c4c39cf47cb7d3190/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/liujiajia/AndroidSpace/MeiKeLai/app/libs/zbardecoder.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="4553499249a43cac44faec812aa7003adec334e2">
+        <dex dex="/Users/liujiajia/AndroidSpace/MeiKeLai/app/build/intermediates/transforms/dex/debug/folders/1000/2/zbardecoder_89a8df0104eae0783da60e6c35d5aa0fba7bc3e1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/liujiajia/AndroidSpace/MeiKeLai/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/liujiajia/AndroidSpace/MeiKeLai/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_112492fe1f870b7e3a75c41a276a875bc0b7376a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/liujiajia/AndroidSpace/MeiKeLai/app/libs/bw_pos_sdk2.0.19.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="17cfa9910123f5efa5a02fdba9ef032d6cdd509c">
+        <dex dex="/Users/liujiajia/AndroidSpace/MeiKeLai/app/build/intermediates/transforms/dex/debug/folders/1000/2/bw_pos_sdk2.0.19_142d490995b550039c61bbf3a1f306325732f719/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/liujiajia/AndroidSpace/MeiKeLai/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.3"
+        sha1="9074763cc9d978113efc75c3e5d7e45459d481c7">
+        <dex dex="/Users/liujiajia/AndroidSpace/MeiKeLai/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_068449c63b31dd6a7bce8cd9b3d9f798b410723d/classes.dex" />
+    </item>
+
+</items>

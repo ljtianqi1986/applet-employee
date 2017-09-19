@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="transparent">#00000000</color>
+    <color name="home_checked_color">#ea5a5f</color>
+    <color name="home_unchecked_color">#b0afaf</color>
+    <color name="textcolor">#ff878988</color>
+    <color name="status_color">#FD6268</color>
+    <color name="navigationBar_color">#000000</color>
+
+    <color name="bg_theme">#ffffff</color>
+    <color name="theme">#FD6268</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="black">#000000</color>
+    <color name="gray_line">#DBDBDB</color>
+    <color name="year_blue">#91C0EE</color>
+    <color name="saving_yellow">#F3BA73</color>
+    <color name="once_purple">#A991E9</color>
+    <color name="select_red">#EC3F46</color>
+    <color name="dark_blue">#7590AB</color>
+    <color name="dark_purple">#948CB1</color>
+    <color name="dark_yellow">#967941</color>
+    <color name="btn_red">#FF5A61</color>
+    <color name="text_normal">#525252</color>
+    <color name="fumi">#FFEDBB</color>
+    <color name="light_gray">#AAAAAA</color>
+    <color name="bg_gray">#F5F5F5</color>
+    <color name="dialog_color">#fe5c5f</color>
+    <color name="black_p50">#7f000000</color>
+    <color name="gray">#999C9E</color>
+    <color name="no_color">#00000000</color>
+
+    <color name="open_card_color">#ff777a</color>
+    <color name="recharge_color">#ffd972</color>
+    <color name="recharge_card_color">#7ed6ff</color>
+    <color name="year_card_color">#9fffb1</color>
+    <color name="not_vip_color">#ff9ff0</color>
+    <color name="stored_color">#b197fc</color>
+    <color name="once_color">#7ed6ff</color>
+    <color name="product_color">#c5c5c5</color>
+
+    <color name="fumi_bg">#40ffffff</color>
+
+
+    <color name="lineColor">#cfcfcf</color>
+
+
+</resources>

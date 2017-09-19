@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/pay"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/icon">
+
+            <TextView
+                android:id="@+id/cash_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:textColor="@color/text_normal"
+                android:text="面部黑脸娃娃110元/次"/>
+
+            <TextView
+                android:id="@+id/right_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:gravity="center"
+                android:layout_marginRight="12dp"
+                android:textSize="18sp"
+                android:text="1次"/>
+
+
+            <TextView
+                android:id="@+id/tv_technician"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cash_name"
+                android:layout_marginTop="2dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="服务技师"/>
+
+            <TextView
+                android:id="@+id/tv_worker"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/cash_name"
+                android:layout_marginTop="2dp"
+                android:drawableRight="@mipmap/more"
+                android:drawablePadding="5dp"
+                android:ellipsize="end"
+                android:layout_marginLeft="10dp"
+                android:maxLines="1"
+                android:layout_toRightOf="@+id/tv_technician"
+                android:text="小能手"/>
+
+
+        </RelativeLayout>
+
+</RelativeLayout>

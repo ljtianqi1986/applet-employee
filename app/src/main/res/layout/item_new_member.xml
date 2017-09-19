@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_bg_white"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="张三三"
+                android:textColor="@color/black"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tv_name"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/tv_name"
+                android:text="手机:180****8888" />
+
+            <ImageView
+                android:id="@+id/switch_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="6dp"
+                android:src="@drawable/down_grey" />
+
+            <TextView
+                android:id="@+id/card_num"
+                style="@style/normal_RelativeLayout_TextView_Style"
+                android:layout_toLeftOf="@+id/switch_btn"
+                android:background="@drawable/shape_stroke_red_bg_white"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:text="3张卡"
+                android:textColor="@color/theme" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/last_time"
+                style="@style/normal_RelativeLayout_TextView_Style"
+                android:text="最近到店：--" />
+
+            <TextView
+                android:id="@+id/total_money"
+                style="@style/normal_RelativeLayout_TextView_Style"
+                android:layout_alignParentRight="true"
+                android:text="共消费：--" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/total_count"
+                style="@style/normal_RelativeLayout_TextView_Style"
+                android:layout_alignParentRight="true"
+                android:text="累计：--" />
+
+            <TextView
+                android:id="@+id/open_card_time"
+                style="@style/normal_RelativeLayout_TextView_Style"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:text="开卡时间：--" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:id="@+id/more_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+            <View
+                android:id="@+id/line"
+                style="@style/normal_line" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#f3f3f3"/>
+</LinearLayout>
